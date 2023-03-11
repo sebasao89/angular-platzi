@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  // Interpolatio
+  // INTERPOLATION
   name: string = 'Sebastian';
   age:number = 33
   img: string = 'https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?b=1&k=6&m=1300845620&s=170x170&h=54jR20mh3xScBU8Z6MrD1Q2J_ZdSq1UcintGGYERFQw='
 
 
-  // Property binding
+  // PROPERTY BINDING
   btnDisable: boolean = true;
 
   person = {
@@ -23,7 +23,7 @@ export class AppComponent {
     avatar: 'https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?b=1&k=6&m=1300845620&s=170x170&h=54jR20mh3xScBU8Z6MrD1Q2J_ZdSq1UcintGGYERFQw='
   }
 
-  // Eventos
+  // EVENTOS
   toggleButton() {
     this.btnDisable = !this.btnDisable
   }
@@ -43,11 +43,27 @@ export class AppComponent {
   }
 
 
-
-  // Data Binding - ngModel
+  // DATA BINDING - ngModel
   computer = {
     price: 200,
     reference: 'Acer'
+  }
+
+
+  // ngFor
+  names: string[] = [
+    'Andrea', 'Viviana', 'Oscar'
+  ]
+
+  newName = ""
+
+  addName() {
+    this.names.push(this.newName)
+    this.newName = ""
+  }
+
+  deleteName(index: number) {
+    this.names.splice(index, 1)
   }
 
 }
