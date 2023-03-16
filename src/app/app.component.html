@@ -1,2 +1,10 @@
 <!-- Componente con los fundamentos de Angular -->
-<app-fundamentos></app-fundamentos>
+<!-- <app-fundamentos></app-fundamentos> -->
+
+
+<!-- @input pasar informacion desde el padre hacia el hijo -->
+<label>Ingresa ruta de la imagen: </label>
+<input type="text" [(ngModel)]="imgPadre">
+<br>
+<!-- Se envia el valor desde el padre (imgPadre) al atributo (img) del hijo -->
+<app-img [img]="imgPadre"></app-img>

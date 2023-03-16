@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // MODULES
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+      // Modulo de formularios y para uso de ngModel
 import { FormsModule } from '@angular/forms';
 
 // COMPONENTS

@@ -11,6 +11,6 @@ import { Product } from './product.model';
 })
 export class AppComponent {
 
-  
+  imgPadre: string = ''
 
 }
